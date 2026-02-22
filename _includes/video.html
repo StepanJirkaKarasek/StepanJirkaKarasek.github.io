@@ -1,0 +1,40 @@
+{% comment %}
+  Použití: {% include video.html src="/assets/video/moje-video.mp4" poster="/assets/video/nahled.jpg" caption="Popis videa" %}
+  nebo pro YouTube: {% include video.html youtube="VIDEO_ID" caption="Popis" %}
+  nebo pro Vimeo: {% include video.html vimeo="VIDEO_ID" caption="Popis" %}
+{% endcomment %}
+
+<figure class="video-figure">
+  {% if include.youtube %}
+    <div class="video-embed">
+      <iframe 
+        src="https://www.youtube.com/embed/{{ include.youtube }}?rel=0" 
+        title="{{ include.caption | default: 'Video' }}"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  {% elsif include.vimeo %}
+    <div class="video-embed">
+      <iframe 
+        src="https://player.vimeo.com/video/{{ include.vimeo }}" 
+        title="{{ include.caption | default: 'Video' }}"
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  {% elsif include.src %}
+    <video 
+      controls 
+      {% if include.poster %}poster="{{ include.poster }}"{% endif %}
+      preload="metadata">
+      <source src="{{ include.src }}" type="video/mp4">
+      Váš prohlížeč nepodporuje přehrávání videa.
+    </video>
+  {% endif %}
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Hlavní strana
+---
+
+{% assign posts_by_day = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" %}
+
+{% for day in posts_by_day limit:20 %}
+<section class="post-day-group">
+  <h2 class="post-day-heading">
+    {{ day.items.first.date | date: "%-d. %-m. %Y" }}
+  </h2>
+  
+  <ul class="post-list">
+    {% for post in day.items %}
+    <li class="post-item">
+      <h3 class="post-item-title">
+        {% if post.external_url %}
+          <a href="{{ post.external_url }}">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}" class="linked-marker" title="Trvalý odkaz">★</a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endif %}
+      </h3>
+      {% if post.excerpt %}
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 200 }}
+          <a href="{{ post.url | relative_url }}" class="read-more">Číst dál →</a>
+        </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

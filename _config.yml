@@ -1,0 +1,17 @@
+title: "Můj Blog"
+description: "Myšlenky, postřehy a zajímavosti."
+url: "https://uzivatelske-jmeno.github.io"
+baseurl: ""
+author: "Vaše jméno"
+lang: cs
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Prague
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
