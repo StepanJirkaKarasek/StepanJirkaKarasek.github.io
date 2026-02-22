@@ -3,39 +3,29 @@ layout: default
 title: Hlavní strana
 ---
 
-{% assign posts_by_day = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" %}
-
 {% assign shown = 0 %}
-{% for day in posts_by_day %}
+{% for post in site.posts %}
   {% if shown < 3 %}
-    <section class="post-day-group">
-      <h2 class="post-day-heading">
-        {{ day.items.first.date | date: "%-d. %-m. %Y" }}
-      </h2>
-      <ul class="post-list">
-        {% for post in day.items %}
-          {% if shown < 3 %}
-            <li class="post-item">
-              <h3 class="post-item-title">
-                {% if post.external_url %}
-                  <a href="{{ post.external_url }}">{{ post.title }}</a>
-                  <a href="{{ post.url | relative_url }}" class="linked-marker">★</a>
-                {% else %}
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                {% endif %}
-              </h3>
-              {% if post.excerpt %}
-                <div class="post-excerpt">
-                  {{ post.excerpt }}
-                  <a href="{{ post.url | relative_url }}" class="read-more">Číst dál →</a>
-                </div>
-              {% endif %}
-            </li>
-            {% assign shown = shown | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </section>
+  <article class="post-item">
+    <h2 class="post-item-title">
+      {% if post.external_url %}
+        <a href="{{ post.external_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}" class="linked-marker">★</a>
+      {% else %}
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% endif %}
+    </h2>
+    <div class="post-item-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%-d. %-m. %Y" }}
+      </time>
+    </div>
+    <div class="post-excerpt">
+      {{ post.excerpt }}
+      <a href="{{ post.url | relative_url }}" class="read-more">Číst dál →</a>
+    </div>
+  </article>
+  {% assign shown = shown | plus: 1 %}
   {% endif %}
 {% endfor %}
 
