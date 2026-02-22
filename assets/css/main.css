@@ -386,3 +386,30 @@ body {
   .site-nav, .back-link { display: none; }
   body { background: white; color: black; }
 }
+
+
+.archive-button-wrap {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.archive-button {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  padding: 0.6em 1.4em;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.archive-button:hover {
+  background: var(--accent);
+  color: white;
+}
