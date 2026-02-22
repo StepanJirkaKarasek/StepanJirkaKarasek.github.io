@@ -20,6 +20,8 @@ It was human.
 
 This started a ten-year run of interviews by Apple executives on The Talk Show every year at WWDC that proved to be great, surprisingly safe PR for Apple.
 
+<!--more-->
+
 No executive ever said something they shouldn’t have (they’re pros), no sensational or negative news stories ever resulted from them, and Apple’s enthusiastic fans and developers felt seen, heard, and appreciated.
 
 *     *     *
