@@ -413,3 +413,8 @@ body {
   background: var(--accent);
   color: white;
 }
+
+.site-nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
