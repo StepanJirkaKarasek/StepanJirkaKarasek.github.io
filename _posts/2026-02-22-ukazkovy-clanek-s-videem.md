@@ -17,7 +17,7 @@ Použijte tag `include` s parametrem `youtube`:
 {% include video.html youtube="dQw4w9WgXcQ" caption="Toto je popis videa, který se zobrazí pod ním." %}
 
 Text může pokračovat hned za videem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+<!--more-->
 ## Vlastní video soubor
 
 Pokud máte vlastní soubor `.mp4`, stačí ho nahrát do složky `assets/video/` a použít:
