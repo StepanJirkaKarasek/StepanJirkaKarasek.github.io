@@ -10,7 +10,7 @@ I wrote this in response:
 
 Both Apple and Phil Schiller himself took a huge risk in doing this. That they agreed at all is a noteworthy gift to this community of long-time enthusiasts, many of whom have felt under-appreciated as the company has grown.
 
-[…]
+<!--more-->
 
 Phil’s appearance on the show was warm, genuine, informative, and entertaining.
 
@@ -19,8 +19,6 @@ It was human.
 **And humanizing the company and its decisions, especially to developers — remember, developer relations is all under Phil — might be worth the PR risk.**
 
 This started a ten-year run of interviews by Apple executives on The Talk Show every year at WWDC that proved to be great, surprisingly safe PR for Apple.
-
-<!--more-->
 
 No executive ever said something they shouldn’t have (they’re pros), no sensational or negative news stories ever resulted from them, and Apple’s enthusiastic fans and developers felt seen, heard, and appreciated.
 
