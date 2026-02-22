@@ -1,3 +1,4 @@
+
 /* ========================================
    HLAVNÍ STYLY — Editorial Blog
    Inspirováno Daring Fireball, vlastní styl
@@ -90,6 +91,11 @@ body {
   border-bottom-color: var(--accent);
 }
 
+.site-nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 /* ======= MAIN ======= */
 .site-main { padding-bottom: 4rem; }
 
@@ -120,6 +126,14 @@ body {
   text-align: right;
 }
 
+.post-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-item:last-child { border-bottom: none; }
+
 .post-item-title {
   font-size: 1.2rem;
   font-weight: 700;
@@ -129,10 +143,6 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-.post-item { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
-.post-item:last-child { border-bottom: none; }
-
-
 .post-item-title a {
   color: var(--text);
   text-decoration: none;
@@ -140,7 +150,6 @@ body {
 
 .post-item-title a:hover { color: var(--accent); }
 
-/* Linked post (external link marker) */
 .post-item-title .linked-marker {
   color: var(--accent);
   margin-left: 0.3em;
@@ -163,7 +172,35 @@ body {
   color: var(--accent);
   text-decoration: none;
 }
+
 .read-more:hover { color: var(--accent-light); }
+
+/* ======= ARCHIVE BUTTON ======= */
+.archive-button-wrap {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.archive-button {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  padding: 0.6em 1.4em;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.archive-button:hover {
+  background: var(--accent);
+  color: white;
+}
 
 /* ======= POST DETAIL ======= */
 .post { padding-top: 0.5rem; }
@@ -231,6 +268,7 @@ body {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
 .post-content a:hover { color: var(--link-hover); }
 
 .post-content blockquote {
@@ -280,6 +318,7 @@ body {
 .post-content ul, .post-content ol {
   margin: 1em 0 1.4em 1.5em;
 }
+
 .post-content li { margin-bottom: 0.4em; }
 
 .post-content hr {
@@ -289,14 +328,12 @@ body {
 }
 
 /* ======= VIDEO ======= */
-.video-figure {
-  margin: 2em 0;
-}
+.video-figure { margin: 2em 0; }
 
 .video-embed {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 4px;
@@ -326,10 +363,10 @@ body {
 }
 
 /* ======= POST FOOTER ======= */
-.post-footer { 
-  margin-top: 3rem; 
-  padding-top: 1.5rem; 
-  border-top: 1px solid var(--border); 
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
 
 .back-link {
@@ -339,6 +376,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.04em;
 }
+
 .back-link:hover { color: var(--accent); }
 
 /* ======= ARCHIVE PAGE ======= */
@@ -374,6 +412,7 @@ body {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
 .archive-item a:hover { color: var(--accent); }
 
 /* ======= RESPONSIVE ======= */
@@ -389,36 +428,4 @@ body {
 @media print {
   .site-nav, .back-link { display: none; }
   body { background: white; color: black; }
-}
-
-
-.archive-button-wrap {
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.archive-button {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  text-decoration: none;
-  border: 1px solid var(--accent);
-  padding: 0.6em 1.4em;
-  border-radius: 2px;
-  transition: background 0.15s, color 0.15s;
-}
-
-.archive-button:hover {
-  background: var(--accent);
-  color: white;
-}
-
-.site-nav a.active {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
 }
