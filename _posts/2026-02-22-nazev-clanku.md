@@ -16,7 +16,7 @@ Phil’s appearance on the show was warm, genuine, informative, and entertaining
 
 It was human.
 
-And humanizing the company and its decisions, especially to developers — remember, developer relations is all under Phil — might be worth the PR risk.
+**And humanizing the company and its decisions, especially to developers — remember, developer relations is all under Phil — might be worth the PR risk.**
 
 This started a ten-year run of interviews by Apple executives on The Talk Show every year at WWDC that proved to be great, surprisingly safe PR for Apple.
 
@@ -35,3 +35,24 @@ I hope that’s either not the case, or it doesn’t stay the case for long.
 This will be the first WWDC I’m not attending since 2009 (excluding the remote 2020 one, of course). Given my realizations about my relationship with Apple and how they view developers, I’ve decided that it’s best for me to take a break this year, gain some perspective, and decide what my future relationship should look like.
 
 Maybe Apple’s leaders are doing that, too.
+
+[zajímavý článek](https://hypercritical.co/)
+
+> Toto je citace. Zobrazí se s červenou čarou vlevo,
+> přesně jako na Marco.org.
+
+---
+layout: post
+title: "Můj článek"
+date: 2026-02-22 10:00:00 +0100
+---
+
+Toto je normální text s **tučným slovem** uprostřed.
+
+![můj obrázek](/assets/img/foto.jpg)
+
+Klikni na [tento odkaz](https://apple.com) pro více informací.
+
+> Tohle je citace od někoho zajímavého.
+
+Text pokračuje normálně.
