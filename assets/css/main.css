@@ -117,6 +117,7 @@ body {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
   margin-bottom: 1.5rem;
+  text-align: right;
 }
 
 .post-item { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
