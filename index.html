@@ -26,7 +26,7 @@ title: Hlavní strana
               </h3>
               {% if post.excerpt %}
                 <div class="post-excerpt">
-                  {{ post.content }}
+                  {{ post.content | markdownify }}
                   <a href="{{ post.url | relative_url }}" class="read-more">Číst dál →</a>
                 </div>
               {% endif %}
