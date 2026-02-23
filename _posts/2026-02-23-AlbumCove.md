@@ -5,7 +5,7 @@ date: 2026-02-22 20:00:00 +0100
 ---
 While your iPhone is charging and playing music, you can’t see what time it is.In iOS 26, Apple introduced a new Full-Screen Album Art view on the iPhone’s Lock Screen. 
 
-![popis obrázku](assets/css/img/AlbumCover.JPEG)
+![popis obrázku](/assets/AlbumCover.JPEG)
 
 On first look it’s stunning but after using it for a few months, I’ve found a fundamental problem.
 
